@@ -570,13 +570,14 @@ We each used what was available to us, then turned it into evidence of growth an
       <img src="/img/jinghan-fu.png" alt="">
       <div>
         <h3>Jinghan Fu</h3>
-        <p class="route mono">University → teaching → hackathons → internship → cloud engineering</p>
+        <p class="route mono">University (tutoring + hackathons + internship) → Cloud engineering</p>
       </div>
     </header>
     <ul v-click>
-      <li>WAM 91, Dean's List and a strong algorithms foundation</li>
-      <li>Casual academic teaching Python, Java and data structures</li>
-      <li>Best Algorithm Prize at a 24-hour hackathon</li>
+      <li>Bachelor of Advanced Computing (Honours) at USYD</li>
+      <li>Built algorithms fundamentals through university coursework</li>
+      <li>Casual academic tutoring Python, Java and data structures</li>
+      <li>Hackathons across three consecutive uni years: Best Algorithm Prize, a setback, then Best UI/UX award</li>
       <li>Microsoft internship project combining AI, Terraform and validation</li>
       <li>Now a Software Engineer working on <strong>Azure Kubernetes Service</strong></li>
     </ul>
@@ -652,9 +653,13 @@ Sources: Jinghan, internal CV (Jinghan_Fu_M4_EAW4_QIBA_Template_CV_Revised.docx)
 
 **Jinghan:** We put our paths side by side because they look quite different, but the principle underneath is the same: we each used what was available to us, then turned it into evidence of growth and impact.
 
-[click] My path went from university, to teaching, to hackathons, to an internship, and now cloud engineering. At uni I focused on building a strong foundation, especially in algorithms; I finished with a WAM of 91 and made the Dean's List. But grades were only one part of it. I also worked as a casual academic, teaching Python, Java and data structures, which forced me to explain ideas clearly to other people. I joined a 24-hour hackathon where our team won the Best Algorithm Prize. Then, during my Microsoft internship, I worked on a project that combined AI, Terraform and validation. Today I'm a Software Engineer working on Azure Kubernetes Service.
+[click] I studied a Bachelor of Advanced Computing (Honours) at the University of Sydney, with tutoring, hackathons and a Microsoft internship all happening during my time at uni. I had no computer science background before uni, so if that's you too, you can build from there. I built my algorithms foundation through the units I took, finishing with a WAM of 91 and making the Dean's List. Alongside my studies, I worked as a casual academic, tutoring Python, Java and data structures, which taught me to explain ideas clearly.
 
-The thing I'd point out is that none of these steps was huge on its own. Each one just added a different kind of evidence. Zuhair's path shows a different route.
+Hackathons were another big part of that learning across three consecutive years at uni. Our team first won a Best Algorithm Prize at a 24-hour event, but the next year brought a setback. We overestimated what we could build in 24 hours: a complete frontend, backend and database, even though we knew nothing about frontend development. AI tools weren't as capable then, and weren't allowed at that event anyway. We didn't pull it off. The lesson wasn't that we couldn't build things; it was to scope realistically, learn what we needed and focus on a small, working demo.
+
+One failure doesn't define your ability or your future. We came back the following year and won a Best UI/UX award at another 24-hour hackathon. My Microsoft internship was also part of my uni experience: I worked on a project combining AI, Terraform and validation. Today I'm a Software Engineer working on Azure Kubernetes Service.
+
+The thing I'd point out is that these weren't separate stages after graduation. They were experiences I built alongside my studies, each adding a different kind of evidence. Zuhair's path shows a different route.
 
 [click] **Zuhair:** Thanks, Jinghan. Mine is more of a long-running build. I studied Computer Science with Honours at UTS, and I built experience through software development work and a data science and web internship. Over time, the scope of what I owned grew. I went on to lead full-stack delivery of agentic AI applications in AWS and Azure, and I strengthened my delivery skills through CI/CD, mentoring and cloud-native engineering. Now I'm a Software Engineer working on Azure Kubernetes Fleet Manager.
 
