@@ -591,9 +591,9 @@ We each used what was available to us, then turned it into evidence of growth an
     </header>
     <ul v-click>
       <li>Computer Science (Honours) at UTS</li>
-      <li>Built experience through software development and a data science / web internship</li>
-      <li>Led full-stack delivery of agentic AI applications in AWS and Azure</li>
-      <li>Strengthened delivery skills through CI/CD, mentoring and cloud-native engineering</li>
+      <li>Constantly built software engineering experience throughout University</li>
+      <li>Led full-stack delivery of agentic AI applications with real users</li>
+      <li>Strengthened delivery skills through expanding ownership, mentoring and cloud-native engineering</li>
       <li>Now a Software Engineer working on <strong>Azure Kubernetes Fleet Manager</strong></li>
     </ul>
   </section>
@@ -873,13 +873,13 @@ Three examples from our paths. Notice how each focuses on decisions, constraints
     </dl>
   </article>
   <article v-click class="example tone-purple">
-    <p class="kicker">Agentic AI product</p>
-    <h3>Agentic AI applications</h3>
+    <p class="kicker">Real Production System</p>
+    <h3>End to End delivered Product</h3>
     <dl>
       <dt>Challenge &amp; choices</dt>
-      <dd>Led full-stack delivery in AWS and Azure, owning architecture and delivery</dd>
+      <dd>Led and drove delivery of a product through all layers of the stack</dd>
       <dt>Evidence</dt>
-      <dd><span class="i-fluent-arrow-trending-24-regular" /> CI/CD guardrails and mentoring that improved the team system</dd>
+      <dd><span class="i-fluent-arrow-trending-24-regular" /> It became used internally and externally by real users</dd>
     </dl>
   </article>
 </div>
@@ -1128,7 +1128,7 @@ How consistent software work grew into technical leadership and platform enginee
   { title: 'Early experience', body: 'Data science / web internship', note: 'Learn delivery basics' },
   { title: 'Sustained practice', body: 'Junior software development', note: 'Build consistency' },
   { title: 'Broader ownership', body: 'Agentic AI products', note: 'Own architecture and delivery' },
-  { title: 'Lead others', body: 'Mentoring and CI/CD guardrails', note: 'Improve the team system' },
+  { title: 'Lead others', body: 'Mentoring and improve team systems', note: 'Look for problems to solve' },
   { title: 'Platform scale', body: 'Azure Kubernetes engineering', note: 'Apply depth at scale' },
 ]" />
 
