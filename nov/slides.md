@@ -864,12 +864,12 @@ Three examples from our paths. Notice how each focuses on decisions, constraints
   </article>
   <article v-click class="example tone-teal">
     <p class="kicker">Internship project</p>
-    <h3>Microsoft internship project</h3>
+    <h3>Prototyping State Driven Agents</h3>
     <dl>
-      <dt>Challenge &amp; choices</dt>
-      <dd>Combining AI, Terraform and validation</dd>
+      <dt>Applying concepts practically</dt>
+      <dd>Using Finite State Machines to drive progression of an agent through a semi-flexible task</dd>
       <dt>Evidence</dt>
-      <dd><span class="i-fluent-checkmark-circle-24-regular" /> Experience with production-level validation</dd>
+      <dd><span class="i-fluent-checkmark-circle-24-regular" /> The framework allowed for rigor and reliability </dd>
     </dl>
   </article>
   <article v-click class="example tone-purple">
