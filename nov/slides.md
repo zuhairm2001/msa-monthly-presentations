@@ -574,9 +574,10 @@ We each used what was available to us, then turned it into evidence of growth an
       </div>
     </header>
     <ul v-click>
-      <li>WAM 91, Dean's List and a strong algorithms foundation</li>
+      <li>Bachelor of Advanced Computing (Honours) at USYD</li>
+      <li>No CS background before uni; built algorithms fundamentals through coursework</li>
       <li>Casual academic teaching Python, Java and data structures</li>
-      <li>Best Algorithm Prize at a 24-hour hackathon</li>
+      <li>Multiple hackathons: setbacks, Best Algorithm Prize and fourth-year Best UI/UX award</li>
       <li>Microsoft internship project combining AI, Terraform and validation</li>
       <li>Now a Software Engineer working on <strong>Azure Kubernetes Service</strong></li>
     </ul>
@@ -652,7 +653,11 @@ Sources: Jinghan, internal CV (Jinghan_Fu_M4_EAW4_QIBA_Template_CV_Revised.docx)
 
 **Jinghan:** We put our paths side by side because they look quite different, but the principle underneath is the same: we each used what was available to us, then turned it into evidence of growth and impact.
 
-[click] My path went from university, to teaching, to hackathons, to an internship, and now cloud engineering. At uni I focused on building a strong foundation, especially in algorithms; I finished with a WAM of 91 and made the Dean's List. But grades were only one part of it. I also worked as a casual academic, teaching Python, Java and data structures, which forced me to explain ideas clearly to other people. I joined a 24-hour hackathon where our team won the Best Algorithm Prize. Then, during my Microsoft internship, I worked on a project that combined AI, Terraform and validation. Today I'm a Software Engineer working on Azure Kubernetes Service.
+[click] My path went from university, to teaching, to multiple hackathons, to an internship, and now cloud engineering. I studied a Bachelor of Advanced Computing (Honours) at the University of Sydney. I had no computer science background before uni, and I didn't start with a strong algorithms foundation. I built that through the units I took, finishing with a WAM of 91 and making the Dean's List. I also worked as a casual academic, teaching Python, Java and data structures, which taught me to explain ideas clearly.
+
+Hackathons were another big part of that learning, and they weren't all wins. In third year, we overestimated what we could build in 24 hours: a complete frontend, backend and database, even though we knew nothing about frontend development. AI tools weren't as capable then, and weren't allowed at that event anyway. We didn't pull it off. The lesson wasn't that we couldn't build things; it was to scope realistically, learn what we needed and focus on a small, working demo.
+
+One failure doesn't define your ability or your future. I kept entering hackathons: our team won a Best Algorithm Prize at a 24-hour event, and in fourth year we won a Best UI/UX award at another 24-hour hackathon. Then, during my Microsoft internship, I worked on a project combining AI, Terraform and validation. Today I'm a Software Engineer working on Azure Kubernetes Service.
 
 The thing I'd point out is that none of these steps was huge on its own. Each one just added a different kind of evidence. Zuhair's path shows a different route.
 
