@@ -1,0 +1,453 @@
+/*
+ * MSA × ayu dark
+ * Base surfaces and syntax hues come from ayu dark (ayu@9). Microsoft's
+ * four logo hues map onto ayu's orange / green / blue / yellow, and MSA's
+ * brand purple (#5C2D91) is used for brand surfaces and glows.
+ */
+:root {
+  /* ayu dark surfaces */
+  --ayu-sunk: #010102;
+  --ayu-bg: #0d1017;
+  --ayu-lift: #10141c;
+  --ayu-panel: #141821;
+  --ayu-line: #1b1f29;
+  --ayu-gray: #5a6378;
+
+  /* text */
+  --ayu-fg: #bfbdb6;
+  --ayu-fg-strong: #f3f1ea;
+  --ayu-muted: #8a91a0;
+
+  /* ayu dark syntax hues */
+  --ayu-accent: #e6b450;
+  --ayu-orange: #ff8f40;
+  --ayu-yellow: #ffb454;
+  --ayu-green: #aad94c;
+  --ayu-teal: #95e6cb;
+  --ayu-blue: #59c2ff;
+  --ayu-purple: #d2a6ff;
+  --ayu-red: #f07178;
+
+  /* Microsoft & MSA brand */
+  --ms-red: #f25022;
+  --ms-green: #7fba00;
+  --ms-blue: #00a4ef;
+  --ms-yellow: #ffb900;
+  --msa-purple: #5c2d91;
+  --msa-violet: #7030a0;
+  --msa-gold: #ffc000;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur: 560ms;
+
+  --slidev-theme-primary: var(--ayu-accent);
+  --slidev-code-background: var(--ayu-lift);
+  --slidev-code-radius: 10px;
+}
+
+/* Alternative deck content patterns. */
+.session-grid {
+  display: grid;
+  gap: 1.15rem;
+  margin: 1.6rem 0;
+}
+
+.session-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.session-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.session-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.session-list li::marker { color: var(--ayu-accent); }
+
+.session-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin: 2rem 0;
+  font-size: 1.05rem;
+}
+
+.session-flow span {
+  padding: 1rem;
+  background: var(--ayu-panel);
+  border: 1px solid var(--ayu-line);
+  border-radius: 12px;
+}
+
+.session-flow b { color: var(--ayu-accent); }
+
+.session-hosts {
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--ayu-line);
+}
+
+.session-hosts .mono,
+.slidev-layout .session-caption {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: var(--ayu-muted);
+}
+
+.session-presenters {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  margin: 2rem 0 2.4rem;
+}
+
+.session-art {
+  max-width: 100%;
+  max-height: 430px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.session-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.session-questions .chip {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+}
+
+.session-survey { margin-top: 2rem; }
+.session-resources .body { line-height: 2; }
+
+/* ───────────── base ───────────── */
+
+.slidev-layout {
+  background: var(--ayu-bg);
+  color: var(--ayu-fg);
+  font-family: 'Segoe UI Variable Text', 'Segoe UI', 'Open Sans', system-ui, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 3.25rem 4.5rem 4.5rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout .display {
+  font-family: 'Segoe UI Variable Display', 'Segoe UI', 'Open Sans', system-ui, sans-serif;
+  color: var(--ayu-fg-strong);
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+.slidev-layout h1 {
+  font-size: 2.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Paragraph straight after the title is the slide's lede. */
+.slidev-layout h1 + p {
+  margin-top: 0.85rem;
+  max-width: 54rem;
+  font-size: 1.35rem;
+  line-height: 1.45;
+  color: var(--ayu-muted);
+  opacity: 1;
+}
+
+.slidev-layout .kicker + h1 {
+  margin-top: 0.7rem;
+}
+
+/* Entrance choreography on every slide: kicker → title → lede. */
+.slidev-page .slidev-layout h1 {
+  animation: rise 760ms var(--ease-out) both 180ms;
+}
+
+.slidev-page .slidev-layout h1 + p {
+  animation: rise 760ms var(--ease-out) both 300ms;
+}
+
+.slidev-layout h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.slidev-layout h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.slidev-layout p {
+  margin: 0;
+}
+
+.slidev-layout a {
+  color: var(--ayu-blue);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--ayu-blue) 40%, transparent);
+}
+
+.slidev-layout strong {
+  color: var(--ayu-fg-strong);
+  font-weight: 600;
+}
+
+.slidev-layout code {
+  font-family: 'Cascadia Code', ui-monospace, monospace;
+}
+
+/* shared typographic atoms */
+.kicker {
+  font-family: 'Cascadia Code', ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ayu-accent);
+}
+
+.lede {
+  font-size: 1.3rem;
+  color: var(--ayu-muted);
+  max-width: 52rem;
+  line-height: 1.45;
+}
+
+.mono {
+  font-family: 'Cascadia Code', ui-monospace, monospace;
+}
+
+.panel {
+  background: var(--ayu-lift);
+  border: 1px solid var(--ayu-line);
+  border-radius: 14px;
+}
+
+.callout {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.95rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--tone, var(--ayu-accent)) 30%, transparent);
+  background: color-mix(in srgb, var(--tone, var(--ayu-accent)) 8%, var(--ayu-bg));
+  color: var(--ayu-fg-strong);
+  font-size: 1.12rem;
+}
+
+.callout > [class^='i-'] {
+  flex: none;
+  font-size: 1.5rem;
+  color: var(--tone, var(--ayu-accent));
+}
+
+.hl {
+  color: var(--ayu-accent);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--ayu-line);
+  background: var(--ayu-lift);
+  font-size: 0.95rem;
+  color: var(--ayu-fg);
+  transition:
+    color 500ms var(--ease-out),
+    background 500ms var(--ease-out),
+    border-color 500ms var(--ease-out),
+    opacity 500ms var(--ease-out);
+}
+
+/* Checklist whose ticks draw in as each item is revealed. */
+ul.checks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.checks li {
+  position: relative;
+  padding-left: 2.1rem;
+}
+
+ul.checks li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--tone, var(--ayu-green)) 16%, transparent);
+}
+
+ul.checks li::after {
+  content: '';
+  position: absolute;
+  left: 0.2rem;
+  top: calc(0.15em + 0.2rem);
+  width: 0.9rem;
+  height: 0.9rem;
+  background: var(--tone, var(--ayu-green));
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8.5 6.2 12.5 14 3.5' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 520ms var(--ease-out) 260ms;
+}
+
+ul.checks li.slidev-vclick-hidden::after {
+  clip-path: inset(0 100% 0 0);
+}
+
+/* MSA brand surface for programme / community slides. */
+.slidev-layout.brand {
+  background:
+    radial-gradient(ellipse 60% 70% at 100% 0%, color-mix(in srgb, var(--msa-violet) 45%, transparent), transparent 70%),
+    radial-gradient(ellipse 50% 60% at 0% 100%, color-mix(in srgb, var(--msa-purple) 30%, transparent), transparent 70%),
+    var(--ayu-bg);
+}
+
+/* LEARN — BUILD — SHARE strip */
+.motto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.motto span {
+  color: var(--tone);
+}
+
+.motto i {
+  width: 1.6rem;
+  height: 1px;
+  background: var(--ayu-gray);
+}
+
+/* tone helpers: set --tone, then use var(--tone) inside a component */
+.tone-orange { --tone: var(--ayu-orange); }
+.tone-yellow { --tone: var(--ayu-yellow); }
+.tone-accent { --tone: var(--ayu-accent); }
+.tone-green { --tone: var(--ayu-green); }
+.tone-teal { --tone: var(--ayu-teal); }
+.tone-blue { --tone: var(--ayu-blue); }
+.tone-purple { --tone: var(--ayu-purple); }
+.tone-red { --tone: var(--ayu-red); }
+
+/* ───────────── motion ─────────────
+ * Click reveals rise and unblur instead of the default hard opacity flip.
+ */
+.slidev-vclick-target {
+  transition:
+    opacity var(--dur) var(--ease-out),
+    transform var(--dur) var(--ease-out),
+    filter var(--dur) var(--ease-out);
+}
+
+.slidev-vclick-hidden {
+  opacity: 0 !important;
+  transform: translateY(14px);
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+/* Entrance on slide enter: add .rise and an optional --i for staggering. */
+.slidev-page .rise {
+  animation: rise 720ms var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 90ms + 120ms);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(6px);
+  }
+}
+
+/* Slow photographic push-in for full-bleed imagery. */
+@keyframes settle {
+  from {
+    transform: scale(1.08);
+  }
+}
+
+/* Slide transition: outgoing slide dims away, incoming slide settles in. */
+.msa-enter-active,
+.msa-leave-active {
+  transition:
+    opacity 480ms var(--ease-out),
+    transform 620ms var(--ease-out),
+    filter 480ms var(--ease-out);
+}
+
+.msa-leave-active {
+  transition-duration: 260ms;
+}
+
+.msa-enter-from {
+  opacity: 0;
+  transform: translateY(10px) scale(0.992);
+  filter: blur(4px);
+}
+
+.msa-leave-to {
+  opacity: 0;
+  filter: blur(2px);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 420ms;
+  animation-timing-function: var(--ease-out);
+}
+
+::view-transition-group(*) {
+  animation-duration: 640ms;
+  animation-timing-function: var(--ease-out);
+}
+
+/* Honour the OS setting everywhere: every entrance, reveal and loop resolves instantly. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after,
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  .slidev-vclick-hidden {
+    transform: none;
+    filter: none;
+  }
+}
