@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+
+# Source PowerPoint decks carry Microsoft sensitivity labels; keep them out of git.
+*.pptx
+*:Zone.Identifier
